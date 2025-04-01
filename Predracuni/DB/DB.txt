@@ -1,0 +1,45 @@
+Table Company {
+  id serial
+  name varchar
+  password varchar
+  company_info varchar
+  logo_path varchar
+  phone number
+}
+
+Table Prebills {
+  id serial
+  user_info varchar
+  comment varchar
+  active bool
+  date datetime
+  company_id int 
+}
+
+
+
+Table Prebills_Products {
+  id serial
+  number int
+  prebill_id int
+  product_id int
+  bills bool
+}
+
+
+Table Products {
+  id serial
+  amount int
+  name varchar
+  description varchar
+  picture varchar
+  price real
+}
+
+
+
+Ref: "Prebills"."id" < "Prebills_Products"."prebill_id"
+
+Ref: "Products"."id" < "Prebills_Products"."product_id"
+
+Ref: "Company"."id" < "Prebills"."company_id"
