@@ -10,18 +10,18 @@
 <body>
     <div class="login-container">
         <div class="icon-container">
-            <img id="icon-img" src="resources/icon_white.png" alt="Icon">
+            <img id="icon-img" src="resources/icon.png" alt="Icon">
             <span id="titles">Website Name</span>
         </div>
         <form action="db_login.php" method="GET">
             <div class="input-container">
-                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="email" placeholder="Company name" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <?php if(isset($_GET['ex'])) if($_GET['ex'] == 1) echo '<p id="exception">Wrong email or password</p>'; ?>
             </div>
             <button type="submit">Login</button></br>
         </form>
-        <p id="normalText">Don't have a account</p><a href="register.php"> Register</a> 
+        <p id="normalText">Don't have a account</p><a href="register.php"> Register</a>
     </div>
 </body>
 </html>
