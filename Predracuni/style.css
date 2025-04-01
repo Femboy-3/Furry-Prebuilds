@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('resources/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+
+.login-container {
+    background: rgba(255, 255, 255, 0.2);
+    border: solid 2px white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    width: 350px;
+    text-align: center;
+}
+
+#icon-img {
+    width: 64px;
+    height: 64px;
+}
+
+.icon-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+#titles {
+    color: white;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: solid 2px white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: bold;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #3b82f6;
+}
+
+
+input::placeholder {
+    color: white;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 35px;
+    transition: background 0.8s;
+}
+
+button:hover {
+    background-color: #3b82f6;
+}
+
+input, button {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+#normalText, a {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#exception {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+}
