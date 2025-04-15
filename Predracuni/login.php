@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="icon" href="resources/icon_white.png" type="image/png">
+    <link rel="icon" href="resources/icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
             </div>
             <button type="submit">Login</button></br>
         </form>
-        <p id="normalText">Don't have a account</p><a href="register.php"> Register</a>
+        <p id="normalText">Don't have a account</p><a href="register.php"> Don't Register</a>
     </div>
 </body>
 </html>
