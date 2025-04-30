@@ -1,3 +1,6 @@
 Bill num. index
 created at: date
 buyer: name lastname
+
+table (products + quantity)
+last row (sum of the prices)

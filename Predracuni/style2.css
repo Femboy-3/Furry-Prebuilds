@@ -8,7 +8,7 @@ body {
 }
 
 #navigation {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(13, 100, 129, 0.4);
     backdrop-filter: blur(15px);
     border-radius: 15px;
     border: solid 2px #e0e0e0;
@@ -21,7 +21,7 @@ body {
     height: 60px;
 }
 
-a {
+.nav-link {
     margin: 0px 3% 0px 3%;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,7 +30,7 @@ a {
     transition: color 0.6s ease;
 }
 
-a:hover {
+.nav-link:hover {
     color: #007acc ;
 }
 
@@ -51,14 +51,81 @@ a:hover {
 }
 
 .item-container {
+    width: 15%;
     border: solid 2px black;
     padding: 10px;
     border-radius: 12px;
     margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     transition: background 0.5s ease;
 }
 
 .item-container:hover {
     background-color: lightgray;
     cursor: pointer;
+}
+
+b, p {
+    padding: 0px;
+    margin: 0px;
+}
+
+button {
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: lightblue;
+  }
+
+tr td:first-child {
+  background-color: lightblue;
+  font-weight: bold;
+  input {
+    background-color: lightblue;
+  }
+}
+  
+input {
+    border: none;
+    font-weight: bold;
+    width: 100px;
+}
+
+#billingInfo {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#title2 {
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 30px;
 }
