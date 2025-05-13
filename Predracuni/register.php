@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="icon" href="resources/icon_white.png" type="image/png">
+    <link rel="icon" href="resources/icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="login-container">
         <div class="icon-container">
-            <img id="icon-img" src="resources/icon_white.png" alt="Icon">
+            <img id="icon-img" src="resources/icon.png" alt="Icon">
             <span id="titles">Website Name</span>
         </div>
         <form action="db_register.php" method="GET">
             <div class="input-container">
-                <input type="text" name="firstname" placeholder="Firstname" required>
-                <input type="text" name="lastname" placeholder="Lastname" required>
                 <input type="text" name="email" placeholder="Company name" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <input type="password" name="cpassword" placeholder="Password (confirm)" required>

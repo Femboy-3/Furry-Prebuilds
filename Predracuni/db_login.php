@@ -14,11 +14,11 @@ if ($conn->connect_error) {
     exit();
 }
 
-$email = $_GET['email'];
-$password = password_hash($_GET['password'], PASSWORD_BCRYPT);
+$company_name = $_GET['email'];
+$password = sha1($_GET['password']);
 
 $stmt = $conn->prepare("SELECT Login(?, ?) AS id");
-$stmt->bind_param("ss", $email, $password);
+$stmt->bind_param("ss", $company_name, $password);
 $stmt->execute();
 $result = $stmt->get_result();
 
@@ -27,7 +27,7 @@ if ($result) {
     
     if ($row['id'] != -1) {
         $_SESSION['id'] = $row['id'];
-        $_SESSION['email'] = $email;
+        $_SESSION['email'] = $company_name;
         header("Location: index.php");
         exit();
     }
